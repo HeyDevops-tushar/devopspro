@@ -1,0 +1,21 @@
+1.
+What is partition?
+A partition is a contiguous set of blocks on a drive that are treated as independent disk.
+2.
+What is partitioning?
+Partitioning means to divide a single hard drive into many logical drives.
+3.
+Why we have multiple partitions?
+ Encapsulate our data. Since file system corruption is limited to that partition only. So we can
+save our data from accidents.
+ We can increase the disk space efficiency. Depending on our usage we can format the
+partition with different block sizes. So we can reduce the wastage of the disk.
+ We can limit the data growth by assigning the disk quotas.
+4.
+What is the structure of the disk partition?
+ The first sector of the O/S disk contains the MBR (Master Boot Record). The MBR is divided
+into 3 parts and it's size is 512 bytes.
+ The first part is IPL (Initial Program Loader) and it contains the Secondary Boot Loader. So,
+IPL is responsible for booting the O/S and it's size is 446 bytes.
+ The second part is PTI (Partition Table Information). It contains the number of partitions on
+the disk, sizes of the partitions and type of the partitions.
