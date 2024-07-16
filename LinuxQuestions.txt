@@ -19,3 +19,21 @@ into 3 parts and it's size is 512 bytes.
 IPL is responsible for booting the O/S and it's size is 446 bytes.
  The second part is PTI (Partition Table Information). It contains the number of partitions on
 the disk, sizes of the partitions and type of the partitions.
+5.
+Explain the disk partition criteria?
+ Every disk can have max. 4 partitions. The 4 partitions are 3 Primary partitions and 1
+Extended partition.
+ The MBR and O/S will install in Primary partition only.
+ The Extended partition is a special partition and can be further divided into multiple logical
+partitions.
+6.
+How to identify the disks?
+In Linux different types of disks will be identified by different naming conventions.
+ IDE) drives will be shown as /dev/hda, /dev/hdb, /dev/hdc, ...etc., and the partitions are
+/dev/hda1, /dev/hda2, /dev/hda3, ...etc.,
+ iSCSI/SCSI and SATA drives will be shown as /dev/sda, /dev/sdb, /dev/sdc, ...etc., and the
+partitions are /dev/sda1, /dev/sda2, /dev/sda3, ...etc.,
+ Virtual drives will be shown as /dev/vda, /dev/vdb, /dev/vdc, ...etc., and the partitions are
+/dev/vda1, /dev/vda2, /dev/vda3, ...etc.,
+IDE -----> Integrated Drive Electronics.iSCSI -----> Internet Small Scale System Interface.
+SCSI -----> Small Scale System Interface.
