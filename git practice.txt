@@ -1,2 +1,3 @@
 This gauge displays a real-time technical analysis overview for your selected timeframe. 
 Git & GitHub cheat-sheet for absolute beginner & DevOps Engineer-
+changes from superadmin
