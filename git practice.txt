@@ -1,0 +1,1 @@
+This gauge displays a real-time technical analysis overview for your selected timeframe. 
